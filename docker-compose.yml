@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  rust_docker_image_test:
+    image: rust_docker_image_test
+    container_name: rust_docker_image_test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5556:5556
+    restart: always
